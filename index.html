@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Petals & Posies</title>
+    <style>
+        .navbar {
+            background-color: #da0492;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .content-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Product Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .discount {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: red;
+            color: white;
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .title {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .price {
+            margin-top: 5px;
+            font-size: 16px;
+            color: green;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="About US.html">About US</a>
+        <a href="Services.html">Services</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+    <div>
+    <hr>
+    <h1>Welcome to Our Flower Shop</h1>
+    <hr>
+    </div>
+
+
+    <div class="content-box">
+        <img src="https://images.unsplash.com/photo-1530092285049-1c42085fd395?fm=jpg&q=60&w=3000" 
+             alt="flower" width="400" height="400">
+        <p><b>Our journey at Petals & Posies began with a simple spark—an unshakable desire to share our lifelong love for flowers and the joy they bring. What started as a quiet dream has grown into a flourishing boutique where creativity, craftsmanship, and the magic of nature come alive in every design. From the beginning, we believed that flowers are more than just beautiful objects; they are powerful messengers of emotion, capable of expressing joy, gratitude, love, sympathy, celebration, and comfort with subtle elegance. Over time, this belief shaped our purpose: to create floral arrangements that go beyond decoration and truly touch hearts. Every bouquet we craft is infused with passion, intention, and a deep respect for the natural beauty of each bloom. We carefully choose every petal, play with colours and textures, and design each arrangement as if it were a piece of art meant to tell a story. Whether it’s for a milestone event, a heartfelt gesture, or a simple moment of happiness, we want our flowers to be meaningful, memorable, and personal. At Petals & Posies, we don’t just deliver flowers—we deliver emotions, thoughtfully shaped with care, creativity, and love. With each passing year, our journey continues to bloom alongside the trust of our customers, and we remain dedicated to spreading beauty, inspiration, and joy—one bouquet, one moment, and one smile at a time.</b></p>
+        
+    </div>
+
+    <h2>Latest Products</h2>
+
+    <div class="products">
+        <div class="card">
+            <span class="discount">-10%</span>
+            <img src="data:image/jpeg;base64,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" alt="Pink Tulips">
+            <div class="title">Pink Tulips</div>
+            <div class="price">$22.99 <span class="old-price">$18.99</span></div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-15%</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUUPFzqe-0FqdMV2qzgbyaNd1DpfwsyvbckA&s" alt="Orange Tulips">
+            <div class="title">Orange Tulips</div>
+            <div class="price">$25.99 <span class="old-price">$18.99</span></div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-5%</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnr5hGcxCJA24f4A4exhcxlna42r0ge8CD_A&s" alt="Red Roses">
+            <div class="title">Red Roses</div>
+            <div class="price">$11.00 <span class="old-price">$18.99</span></div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-18%</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwkNrhC9F_Qs1fdhEQdbZoDrDTql4MmQGxBg&s" alt="Pink Lotus">
+            <div class="title">Pink Lotus</div>
+            <div class="price">$13.99 <span class="old-price">$18.99</span></div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-20%</span>
+            <img src="https://plus.unsplash.com/premium_photo-1676068243733-df1880c2aef8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zmxvd2VyfGVufDB8fDB8fHww" alt="Artsy White lily">
+            <div class="title">Artsy White lily</div>
+            <div class="price">$30.00 <span class="old-price">$18.99</span></div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-5%</span>
+            <img src="https://www.photoion.co.uk/wp-content/uploads/2015/06/flower-photography-tips.jpg" alt="Pink Hibscus">
+            <div class="title">Pink Hibscus</div>
+            <div class="price">$16.00 <span class="old-price">$18.99</span></div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-5%</span>
+            <img src="https://thumbs.dreamstime.com/b/red-hibiscus-flower-11100983.jpg" alt="Red Hibscus">
+            <div class="title">Red Hibscus</div>
+            <div class="price">$12.99 <span class="old-price">$18.99</span></div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-5%</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbo9pY1T_JOKDV8Ex8wj8-1lg34gi08czh4w&s" alt="Pink Daffodil">
+            <div class="title">Pink Daffodil</div>
+            <div class="price">$18.99 <span class="old-price">$18.99</span></div>
+        </div>
+
+        <div class="card">
+            <span class="discount">-5%</span>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_tfL4QnvbThKnMyPALmM8t3FggYc-shokrw&s" alt="White Lotus">
+            <div class="title"></div>
+            <div class="price">$19.99 <span class="old-price">$18.99</span></div>
+        </div>
+    </div>
+    <div>
+        <div id="footer-message">
+        <center>
+            <h1>🌺About Us</h1>
+            <p><b>Our journey at Petals & Posies began with a simple seed of an idea to share our lifelong passion for flowers with the world. What started as a small dream has blossomed into a beloved local shop where creativity and nature intertwine. Every arrangement we create is infused with care, artistry, and a deep respect for the fleeting beauty of each bloom. We don't just sell flowers; we help you tell your story, express your emotions, and create moments of pure happiness. We invite you to discover the difference that passion makes</b></p>
+    </center>
+        </div>
+    </div>
+    <hr>
+    <center>
+        <h1>🌸 Our Vision</h1>
+        <p><b>Our vision is to bring the timeless beauty of nature into people’s lives, inspiring joy, emotional connection, and celebration through innovative floral designs, sustainable practices, and exceptional customer service.</b></p>
+    </center>
+   <hr>
+
+    <center>
+        <h1>🌼 Our Mission</h1>
+        <p><b>At Petals & Posies, our mission is to craft exquisite floral arrangements that capture the essence of every occasion, while fostering a deep appreciation for the natural world. We are committed to sustainability, community engagement, and delivering unparalleled service that transforms moments into cherished memories.</b></p>
+    </center>
+
+    <hr>
+    <center>
+        <h1>🌺 Our Tagline</h1>
+        <p><b>Petals & Posies: Where Every Bloom Tells a Story</b></p>
+    </center>
+    <hr>
+    <center>
+    <h1>🌻 Why Choose Us?</h1>
+    <ul style="text-align: left; display: inline-block;">
+        <li><b>🌸 Expert Florists:</b> Our team of skilled florists brings creativity and passion to every arrangement, ensuring each bouquet is a masterpiece.</li>
+
+        <li><b>🌿 Freshness Guaranteed:</b> We source our flowers daily from trusted growers to ensure the highest quality and longest-lasting blooms.</li>
+
+        <li><b>💐 Custom Designs:</b> Whether it’s a wedding, birthday, or just because, we tailor each arrangement to your unique style and needs.</li>
+
+        <li><b>🌎 Sustainable Practices:</b> We are committed to eco-friendly sourcing and packaging, minimizing our environmental impact.</li>
+
+        <li><b>🤝 Exceptional Service:</b> From consultation to delivery, we prioritize your satisfaction and strive to exceed your expectations.</li>
+
+        <li><b>🎉 Wide Selection:</b> From classic roses to exotic orchids, our diverse range of flowers caters to all tastes and occasions.</li>
+
+        <li><b>🚚 Reliable Delivery:</b> We offer prompt and careful delivery services to ensure your flowers arrive fresh and beautiful.</li>
+
+        <li><b>💖 Creating Memories:</b> We believe in the power of flowers to convey emotions and create lasting memories for you and your loved ones.</li>
+    </ul>
+</center>
+
+        <hr>
+    <center>
+        <h1>🌷Our Motive </h1>
+        <p>At Petals & Posies, our motive goes far beyond simply selling flowers.
+Our true purpose is to create meaningful experiences that touch hearts, celebrate moments, and bring comfort when it’s needed the most. Every bouquet we design carries a message, every arrangement tells a story, and every petal reflects the care we put into our craft</p>
+    </center>
+    
+</body>
+</html>
